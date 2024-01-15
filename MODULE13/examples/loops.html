@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops</title>
+    <script type="text/javascript">
+        function enter(){
+        var aNumber =1;
+
+        var aString ="1";
+
+        var bString ="2";
+
+        var bNumber =2;
+
+        while(aNumber < bNumber
+        ){
+            alert("the aNumber is lesser than the bNumber")
+
+            aNumber= aNumber +1 /*or you can simply say aNumber ++*/  
+
+            alert("the value of the aNumber in the while loop is now"+aNumber);
+
+        }
+        aNumber=0;
+       
+        do {
+            alert("the value of the aNumber after the decrement is :"+aNumber)
+            aNumber++;
+        }while(aNumber < bNumber)
+        
+           
+        }
+
+    </script>
+</head>
+<body>
+    <header></header>
+    <nav><a href="index.html">Home</a>
+    </nav>
+    <main>
+        <input type="submit" id="submit" value="submit" onclick="enter()">
+    </main>
+    <footer></footer>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.style.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <script src="script/calculator.js" type="text/javascript"></script> <!--this calles the external calculator javascript.-->
+   
+    
+</head>
+<body>
+<header><img src="/media/images/logo.png" alt="martial arts dappy logo"></header>
+
+   <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Classes.html">Classes</a></li>
+        <li><a href="Enrole.html">Enroll</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+   </nav>
+   
+   <main>
+    <input id="operation" value="0" type="hidden"> <!--this keep our opraton data-->
+    <input id="operand" value="" type="hidden"> <!--this will store the first number typed in-->
+    <input id="equivalent" value="0" type="hidden">
+    <input id="decimalvar" value="0" type="hidden">
+
+    <table>
+    <caption><input id="result" type="text" value="0" readonly></caption>
+        <tr>
+            <td><input id="allclear" value="ac" type="button" onclick="allclear()"></td>
+            <td><input id="square" value="x&sup2;" type="button" onclick="square()"></td>
+            <td><input id="precent" value="%" type="button" onclick="percent()"></td>
+            <td><input id="divide" value="&divide;" type="button" onclick="operators(4)"></td>
+        </tr>
+
+        <tr>
+            <td><input id="seven" value="7" type="button" onclick="input(7)"></td>
+            <td><input id="eight" value="8" type="button" onclick="input(8)"></td>
+            <td><input id="nine" value="9" type="button" onclick="input(9)"></td>
+            <td><input id="multiply" value="&times;" type="button" onclick="operators(3)"></td>
+        </tr>
+
+        <tr>
+            <td><input id="four" value="4" type="button" onclick="input(4)"></td>
+            <td><input id="five" value="5" type="button" onclick="input(5)"></td>
+            <td><input id="six" value="6" type="button" onclick="input(6)"></td>
+            <td><input id="subtract" value="&minus;" type="button" onclick="operators(2)"></td>
+        </tr>
+
+        <tr>
+            <td><input id="one" value="1" type="button" onclick="input(1)"></td>
+            <td><input id="two" value="2" type="button" onclick="input(2)"></td>
+            <td><input id="three" value="3" type="button" onclick="input(3)"></td>
+            <td><input id="add" value="&plus;" type="button" onclick="operators(1)"></td>
+        </tr>
+
+        <tr>
+            <td><input id="plusminus" value="&plusmn;" type="button" onclick="plusminus()"></td>
+            <td><input id="zero" value="0" type="button" onclick="input(0)"></td>
+            <td><input id="decimal" value="." type="button" onclick="decimalpoint()"></td>
+            <td><input id="equal" value="=" type="button" onclick="equals()"></td>
+        </tr> 
+
+   </table>
+   </main>
+   <footer><p>our locatin:<br>
+    DE 5 9QB HEANOR RAOAD<br>
+    flat 5 
+    </p>
+    <p>phone number:<a href="tel:807654326">(807) 656-2345</p>
+    <p>
+        email addree: <a href="milto:owner@gmail.com"></a>
+    </p></footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+@media screen and (min-width:640px) {
+nav ul li{
+    border-radius: 1em;
+}
+nav{
+    border-radius: 1em;*/ /*this rounds the conners of elements*/
+}
+.tablet{
+    display: none;
+}
+.desktop{
+    display: none;
+}
+figure img{
+    display: none;
+}
+
+}
